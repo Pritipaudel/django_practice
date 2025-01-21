@@ -10,5 +10,10 @@ class Student(models.Model):
     image = models.ImageField()
     file = models.FileField()
 
-class Marks(models.Model):
-    pass
+class flower(models.Model):
+    name = models.CharField(max_length= 50)
+    f_color = models.CharField(max_length = 50)
+    number = models.IntegerField()
+
+    def __str__(self):
+        return self.f_color
