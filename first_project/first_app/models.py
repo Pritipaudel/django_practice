@@ -16,4 +16,4 @@ class flower(models.Model):
     number = models.IntegerField()
 
     def __str__(self):
-        return self.f_color
+        return f"Flower: {self.name}, Color: {self.f_color}, Quantity: {self.number}"
